@@ -11,8 +11,8 @@ interface ContentBoxProps {
     fullWidth?: boolean;
     bordered?: boolean;
     fontSize?: "small" | "medium" | "large";
-    children: React.ReactNode;
-}
+    children?: React.ReactNode;
+} // ?가 없으면 필수가 되고 있으면 선택사항이 됨
 
 export const ContentBox: FC<ContentBoxProps> = ({
     title,
